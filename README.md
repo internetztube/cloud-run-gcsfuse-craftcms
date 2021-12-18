@@ -1,4 +1,8 @@
 # Cloud Run Persistent Storage Issue
+
+Stackoverflow:
+https://stackoverflow.com/questions/70407189/unable-to-mount-bucket-with-gcsfuse-on-cloud-run
+
 Cannot mount Google Cloud Storage Bucket with gcsfuse. 
 ```
 bin/fusermount: failed to open /dev/fuse: Permission denied
