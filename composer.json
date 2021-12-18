@@ -1,0 +1,10 @@
+{
+    "name": "frederic.koeberl/cloud-run-persistent-storage",
+    "authors": [
+        {
+            "name": "Frederic Koeberl",
+            "email": "frederic.koeberl@dynatrace.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,5 @@
+{
+  "type": "service_account",
+  "project_id": "your-google-cloud-project",
+  ...
+}
