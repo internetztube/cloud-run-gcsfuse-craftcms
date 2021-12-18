@@ -1,9 +1,9 @@
 {
-    "name": "frederic.koeberl/cloud-run-persistent-storage",
+    "name": "internetztube/cloud-run-persistent-storage-issue",
     "authors": [
         {
             "name": "Frederic Koeberl",
-            "email": "frederic.koeberl@dynatrace.com"
+            "email": "hello@frederickoeberl.com"
         }
     ],
     "require": {}
