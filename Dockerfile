@@ -18,7 +18,7 @@ RUN apk add --no-cache mysql-client postgresql-client ca-certificates fuse nano 
 
 RUN mkdir -p $MNT_DIR
 RUN chown www-data:www-data $MNT_DIR
-USER www-data
+# USER www-data
 
 COPY --chown=www-data:www-data --from=vendor /app/vendor/ /app/vendor/
 COPY --chown=www-data:www-data . .
