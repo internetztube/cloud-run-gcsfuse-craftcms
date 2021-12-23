@@ -12,13 +12,12 @@ RUN composer install --ignore-platform-reqs --no-interaction --prefer-dist
 FROM craftcms/nginx:7.4
 
 ENV MNT_DIR /mnt/gcs
+RUN ln -s $MNT_DIR /app/storage
 
 USER root
 RUN apk add --no-cache mysql-client postgresql-client ca-certificates fuse nano sudo tini bash
-
 RUN mkdir -p $MNT_DIR
 RUN chown www-data:www-data $MNT_DIR
-# USER www-data
 
 COPY --chown=www-data:www-data --from=vendor /app/vendor/ /app/vendor/
 COPY --chown=www-data:www-data . .
