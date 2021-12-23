@@ -15,7 +15,7 @@ ENV MNT_DIR /mnt/gcs
 RUN ln -s $MNT_DIR /app/storage
 
 USER root
-RUN apk add --no-cache mysql-client postgresql-client ca-certificates fuse nano sudo tini bash
+RUN apk add --no-cache mysql-client postgresql-client ca-certificates fuse
 RUN mkdir -p $MNT_DIR
 RUN chown www-data:www-data $MNT_DIR
 
